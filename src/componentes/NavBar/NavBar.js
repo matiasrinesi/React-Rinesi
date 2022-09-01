@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import CartWidget  from './CartWidget';
 
 function CollapsibleExample() {
   return (
@@ -31,7 +32,7 @@ function CollapsibleExample() {
             <Nav.Link eventKey={2} href="#memes">
               Nuestra historia
             </Nav.Link>
-             <img  src='https://cdn-icons-png.flaticon.com/512/107/107831.png' width={50} height={50}/>
+             <CartWidget></CartWidget>
           </Nav>
         </Navbar.Collapse>
       </Container>

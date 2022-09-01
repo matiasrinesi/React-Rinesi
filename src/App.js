@@ -1,14 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
  import logo from './logo.svg';
 import './App.css';
-import  NavBar  from './NavBar/NavBar';
+import  NavBar  from './componentes/NavBar/NavBar';
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
     
     <div className="App">
+      <NavBar/>
       <header className="App-header">
-       <NavBar/>
+       <ItemListContainer Camisetas={40}/>
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
