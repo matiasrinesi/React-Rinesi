@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import  NavBar  from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import ItemCount from './componentes/ItemListContainer/ItemCount';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
       <NavBar/>
       <header className="App-header">
-       <ItemListContainer Camisetas={40}/>
+       <ItemListContainer Camisetas={20}/>
+       <ItemCount  Camisetas={20} ></ItemCount>
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.

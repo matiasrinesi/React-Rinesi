@@ -7,6 +7,29 @@
   pointer-events: none;
 }
 
+.masomenos{
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+  margin-top: 60px;
+}
+.sumar{
+  margin: 10px;
+  background-color: #FFC107;
+  border-radius: 15px;
+  border-style: groove;
+  color: black;
+}
+.value{
+  margin: 10px;
+  width: 20px;
+  text-align: center;
+}
+.addcarrito{
+ 
+  border-radius: 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
