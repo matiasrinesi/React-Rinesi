@@ -7,11 +7,13 @@
   pointer-events: none;
 }
 
+
 .masomenos{
   display: flex;
   flex-direction: row;
   margin: 40px;
   margin-top: 60px;
+
 }
 .sumar{
   margin: 10px;

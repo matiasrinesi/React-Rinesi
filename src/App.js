@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <NavBar/>
       <header className="App-header">
-       <ItemListContainer Camisetas={20}/>
-       <ItemCount  Camisetas={20} ></ItemCount>
+       { <ItemListContainer /*Camisetas={20} onAdd={(valor)=>{console.log(valor)}}*//> }
+       { <ItemCount  Camisetas={20} onAdd={(valor)=>{console.log(valor)}} ></ItemCount> }
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.

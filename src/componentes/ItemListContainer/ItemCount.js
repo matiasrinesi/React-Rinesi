@@ -5,8 +5,8 @@ const ItemCount = ({Camisetas, initial, onAdd}) => {
   
     const [valor, setValor] = React.useState(0);
     return (
-  <div>
- 
+  
+ <div className='divcarro'>
  
   
    
