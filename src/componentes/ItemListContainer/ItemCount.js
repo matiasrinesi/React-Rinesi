@@ -1,9 +1,17 @@
-import React from 'react'
+import { useState } from 'react'
 
 
-const ItemCount = ({Camisetas, initial, onAdd}) => {
+const ItemCount = ({stock, initial, onAdd}) => {
   
-    const [valor, setValor] = React.useState(0);
+    const [valor, setValor] = useState(initial);
+    const increment = () => {
+        setValor(actualValor => actualValor +1)
+    }
+    const decrement = () => {
+        setValor(actualValor => actualValor -1)
+    }
+   
+   
     return (
   
  <div className='divcarro'>
@@ -11,16 +19,10 @@ const ItemCount = ({Camisetas, initial, onAdd}) => {
   
    
      <div className='masomenos'>
-      <button  className='sumar' onClick={() => {
-    initial = 0
-    setValor(valor - 1)
-    valor > initial ? setValor(valor - 1) : setValor(initial)
-    }}>-</button> 
+      <button  className='sumar' onClick={decrement} disabled = {valor<1}>-</button>
 
    <p className='value'>{valor}</p> 
-        <button className='sumar' onClick={() => {
-     valor < Camisetas ? setValor(valor + 1) : setValor(Camisetas)
-    }}>+</button> 
+        <button className='sumar' onClick={increment} disabled={valor>stock}>+</button> 
 </div>
       <button className='addcarrito' onClick = {() => onAdd(valor)}>Añadir al carrito</button>
     </div>

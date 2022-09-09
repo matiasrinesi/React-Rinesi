@@ -12,7 +12,7 @@ function App() {
       <NavBar/>
       <header className="App-header">
        { <ItemListContainer /*Camisetas={20} onAdd={(valor)=>{console.log(valor)}}*//> }
-       { <ItemCount  Camisetas={20} onAdd={(valor)=>{console.log(valor)}} ></ItemCount> }
+       {/* { <ItemCount  Camisetas={20} onAdd={(valor)=>{console.log(valor)}} ></ItemCount> } */}
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.

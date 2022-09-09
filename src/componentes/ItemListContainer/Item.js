@@ -3,7 +3,7 @@ import ItemCount from './ItemCount'
 
 const Item = ({id, equipo, precio, stock}) => {
     function onAdd(contador) {
-        alert(`Agregaste ${contador} cortinas al carrito`)
+        alert(`Agregaste ${contador} camisetas al carrito`)
     }
   return (
     <div id={id}>
@@ -13,7 +13,7 @@ const Item = ({id, equipo, precio, stock}) => {
             <p>Stock: {stock} unidades</p>
         </div>
         <div>
-            <ItemCount stock={stock} initial={1} onAdd={onAdd}/>
+            <ItemCount stock={stock} initial={0} onAdd={onAdd}/>
         </div>
     </div>
   )
