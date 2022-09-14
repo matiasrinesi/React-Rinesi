@@ -1,13 +1,13 @@
 import React from 'react'
 import ItemCount from './ItemCount'
 
-const Item = ({id, equipo, precio, stock}) => {
-    function onAdd(contador) {
-        alert(`Agregaste ${contador} camisetas al carrito`)
+const Item = ({id, equipo, precio, stock, img}) => {
+    function onAdd(valor) {
+        alert(`Agregaste ${valor} camisetas al carrito`)
     }
   return (
-    <div id={id}>
-        <div>
+    <div className='carta' id={id}>
+        <div >
             <h2>{equipo}</h2>
             <p>Precio: {precio}</p>
             <p>Stock: {stock} unidades</p>

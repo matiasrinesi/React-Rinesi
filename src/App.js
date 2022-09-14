@@ -4,6 +4,7 @@ import './App.css';
 import  NavBar  from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import ItemCount from './componentes/ItemListContainer/ItemCount';
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         >
           Learn React
         </a> */}
+        <ItemDetailContainer />
         
       </header>
     </div>

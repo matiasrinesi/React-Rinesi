@@ -18,7 +18,7 @@ const ItemListContainer = () => {
       if(confirmacion){
         res(camisetas)
       }else{
-        err("Acceso rechazado")
+        err("Error")
       }
     }, 2000)
   })
