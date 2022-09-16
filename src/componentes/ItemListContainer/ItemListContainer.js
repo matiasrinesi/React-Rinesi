@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import camisetas from '../../data/data'
 import ItemList from './ItemList';
-
+import { useParams } from 'react-router-dom';
 // const ItemListContainer = ({Camisetas}) => {
 
 //   return (
@@ -28,11 +28,18 @@ const ItemListContainer = () => {
       getCamisetas(true).then(camisetasList => setCamisetasList(camisetasList))
     }, [])
 
+    const { id } = useParams()
+
     return (
       <div>
         <h1>Shirtmuseum</h1>
         <div>
-          {camisetasList && <ItemList camisetasList={camisetasList} />}
+         
+        
+      <h5>{id} Productos</h5>
+
+     {camisetasList && <ItemList camisetasList={camisetasList} />}
+
         </div>
       </div>
     )

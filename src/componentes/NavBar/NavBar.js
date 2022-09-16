@@ -3,14 +3,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget  from './CartWidget';
+import { Link } from 'react-router-dom';
 
 function CollapsibleExample() {
+  const id = 6;
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Shirt Museum</Navbar.Brand>
+      <Navbar.Brand href="#home"><Link to='/'>Shirtmuseum</Link></Navbar.Brand>
+                <li><Link to={`/product/${id}`}>Productos</Link></li>
+                <li><Link to='/Item/'>Mas Vendido</Link></li>
+                <li><Link to='/Contact/'>Contacto</Link></li>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        {/* <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#features">Camisetas</Nav.Link>
             <Nav.Link href="#pricing">Shorts</Nav.Link>
@@ -31,12 +36,12 @@ function CollapsibleExample() {
             <Nav.Link href="#deets">Contacto</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               Nuestra historia
-            </Nav.Link>
-             <CartWidget></CartWidget>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+            </Nav.Link> */}
+               <nav>
+                    <CartWidget></CartWidget>
+                </nav>
+            </Container>
+        </Navbar >
   );
 }
 
