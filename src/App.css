@@ -27,7 +27,15 @@
   flex-direction: row;
   margin-left: 30px;
   margin-top: 10px;
+  
 
+
+}
+.contador{
+  display: flex;
+  flex-direction: row;
+  margin-left: 230px;
+  margin-top: 10px;
 
 }
 .sumar{

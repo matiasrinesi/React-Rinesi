@@ -13,14 +13,14 @@ const ItemDetail = ({ detalle }) => {
             <h5>{detalle.stock}</h5>
             <h5>{detalle.precio}</h5>
 
-
+             <div className='contador'>
             {
                 count == 0 ?
-                <ItemCount className='contador' stock={detalle.stock} initial={0} onAdd={(c) => { setCount(c) }}/>
+                <ItemCount  stock={detalle.stock} initial={0} onAdd={(c) => { setCount(c) }}/>
                 : <Link to="/Cart/"> Terminar compra </Link>
 
             } 
-           
+           </div>
             
 
 
