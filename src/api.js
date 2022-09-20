@@ -3,7 +3,8 @@ export const getItem = () => new Promise((res) => {
         {
             nombre: 'Argentina',
             descripcion: 'Camiseta titular de la selección argentina para el mundial de Qatar 2022',
-            precio: '$10.000'
+            precio: '$10.000',
+            stock: 10
         }
     ), 2000)
 })
