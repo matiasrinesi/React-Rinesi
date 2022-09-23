@@ -38,6 +38,10 @@
   margin-top: 10px;
 
 }
+.addtocart{
+  display: flex;
+  flex-direction: column;
+}
 .sumar{
   margin: 10px;
   background-color: #FFC107;

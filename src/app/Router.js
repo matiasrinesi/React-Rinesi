@@ -5,11 +5,12 @@ import { Layout } from './Layout';
 import ItemListContainer from '../componentes/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../componentes/ItemDetailContainer/ItemDetailContainer';
 import Cart from '../pages/Cart';
+import Provider from './Provider';
 
 
 
 const Router = () => (
-
+  <Provider>
     <BrowserRouter>
         <Routes>
             <Route element={<Layout />}>
@@ -26,6 +27,7 @@ const Router = () => (
 
         </Routes>
     </BrowserRouter>
+    </Provider>
 );
 
 export default Router;
