@@ -1,11 +1,19 @@
-import React from 'react'
 
-const CartWidget = () => {
-  return (
-    <button>
-                    <img  src='https://cdn-icons-png.flaticon.com/512/107/107831.png' width={50} height={50}/>
-    </button>
-  )
+
+import React from 'react'
+import { Link } from 'react-router-dom';
+
+function CartWidget() {
+    return (
+        <div>
+            <button className="botonCarrito">
+                <Link to={"/Cart"} ><img className='carrito' src="https://cdn-icons-png.flaticon.com/512/107/107831.png" width={40} alt="" />
+                </Link>
+
+
+            </button>
+        </div>
+    );
 }
 
 export default CartWidget;

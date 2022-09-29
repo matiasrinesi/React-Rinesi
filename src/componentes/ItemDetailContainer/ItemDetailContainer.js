@@ -1,7 +1,10 @@
+
+
 import React from 'react'
 import { useEffect, useState } from 'react';
-import ItemDetail from './ItemDetail';
 import { getItem } from '../../api';
+import ItemCount from '../ItemListContainer/ItemCount';
+import ItemDetail from './ItemDetail';
 
 const ItemDetailContainer = () => {
     const [detalles, setDetalle] = useState({});
@@ -13,7 +16,9 @@ const ItemDetailContainer = () => {
     }, [])
 
     return (
+        
         <ItemDetail detalle={detalles} />
+        
     )
 }
 export default ItemDetailContainer;
