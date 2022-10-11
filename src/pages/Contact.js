@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <div>
             <h1>
-                Buscanos en Instagram y Twitter como Shirtmuseum
+                Encontranos en Instagram y Twitter como Shirtmuseum
             </h1>
         </div>
     )

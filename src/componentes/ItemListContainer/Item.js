@@ -1,3 +1,30 @@
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+
+
+const Item = ({ item }) => {
+
+
+    return (
+
+
+        < div className='prod' id={item.id}>
+            <h2>
+                {item.equipo}
+            </h2>
+            <p>Precio: ${item.precio}</p >
+            <p> Disponibles: {item.stock} unidades</p>
+
+            <Link to={`/Item/${item.id}`}>Ver detalle</Link>
+        </div>
+
+
+
+    )
+}
+export default Item
+
+
 // import React, { useState } from 'react'
 // import ItemCount from './ItemCount'
 // import { Link } from 'react-router-dom';
@@ -28,31 +55,31 @@
 // }
 
 // export default Item
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+// import React, { useState } from 'react'
+// import { Link } from 'react-router-dom';
 
 
 
 
-const Item = ({ item }) => {
-    // const [count, setCount] = useState(0);
+// const Item = ({ item }) => {
+//     // const [count, setCount] = useState(0);
 
 
-    return (
+//     return (
 
 
-        < div className='prod' id={item.id}>
-            <h2>
-                {item.equipo}
-            </h2>
-            <p>Precio: ${item.precio}</p >
-            <p> Disponibles: {item.stock} unidades</p>
+//         < div className='prod' id={item.id}>
+//             <h2>
+//                 {item.equipo}
+//             </h2>
+//             <p>Precio: ${item.precio}</p >
+//             <p> Disponibles: {item.stock} unidades</p>
 
-            <Link to={`/Item/${item.id}`}>Ver detalle</Link>
-        </div>
+//             <Link to={`/Item/${item.id}`}>Ver detalle</Link>
+//         </div>
 
 
 
-    )
-}
-export default Item
+//     )
+// }
+// export default Item
