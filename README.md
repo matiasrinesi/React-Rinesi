@@ -1,3 +1,23 @@
+El video que muestra una compra está en el siguiente link: https://youtu.be/oI9Dl6vbZew
+SHIRTMUSEUM es una página que se dedica a la venta de camisetas de fútbol de equipos y selecciones de todo el mundo.
+
+En la página de inicio podemos ver todos los productos que ofrece shirtmuseum y la posibilidad de ver el detale de cada uno. En contacto se pueden encontrar las diferentes formas de contactar a la empresa, tanto por redes sociales como por teléfono y e-mail.
+
+Librerias
+
+React-router-dom
+
+Mediante un npm, para crear rutas fijas y dinámicas, y mostrar un producto con su información correspondiente (tal como la descripción). Por medio de esta librería se utilizan los componentes: useState, useParams, Link, NavLink, Outlet,BrowserRouter, Routes, Route y useEffects.
+
+Boostrap ultilizado en el navbar.
+
+Proyecto
+
+Este proyecto de e-commerce fue desarrollado durante el curso de React JS de CoderHouse.
+
+Conectado a Firebase, para crear y obtener los datos de cada producto; además de envíar y guardar los datos del comprador y su orden de compra.
+
+Todas las imagenes fueron extraídas de internet.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
