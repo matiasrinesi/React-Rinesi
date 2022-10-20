@@ -5,10 +5,10 @@ import { AppContext } from '../app/Provider'
 
 
 const Comprar = () => {
-
+    const { numero } = useContext(AppContext)
     const { carrito } = useContext(AppContext)
     const { total } = useContext(AppContext)
-    const cart = carrito.map(item => ({ key: item.id, nombre: item.nombre, precio: item.precio }))
+    const cart = carrito.map(item => ({ key: item.id, nombre: item.equipo, precio: item.precio }))
     const [orders, setOrders] = useState({
         nombre: '',
         telefono: '',
@@ -28,27 +28,22 @@ const Comprar = () => {
 
 
     return (
-        <div>Comprar
+        <div>
 
-            <form onSubmit={hola}>
-                <label >Nombre y apellido</label>
+            <form className='comprar' onSubmit={hola}>
+                <h1 className='datos'>¡Dejanos tus datos!</h1>
+                <label className='label' >Nombre y apellido</label>
                 <input type="text" value={orders.nombre} onChange={(e) => { setOrders({ ...orders, nombre: e.target.value }) }} />
-                <label >Email</label>
+                <label className='label'>Email</label>
                 <input type="text" value={orders.email} onChange={(e) => { setOrders({ ...orders, email: e.target.value }) }} />
-                <label >Num. de Telefono</label>
+                <label className='label'> Telefono</label>
                 <input type="number" value={orders.telefono} onChange={(e) => { setOrders({ ...orders, telefono: e.target.value }) }} />
-                <button>comprar</button>
+                <h2 className='preciotot'>precio total: ${total}</h2>
+               
+                <button className='fincompra'>comprar</button>
             </form>
-            <h3></h3>
-            {carrito.length > 0 ? carrito.map(item => <div key={item.id}>
-                <br /><h2 >{item.nombre}</h2> <h5>precio: ${item.precio}</h5>
-                <br></br>
-                <br />
+            
 
-            </div>)
-
-                : console.log('n')
-            }
         </div>
     )
 }

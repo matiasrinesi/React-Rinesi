@@ -9,13 +9,13 @@ import CartWidget from './CartWidget';
 
 function NavBar() {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
+        <Navbar  collapseOnSelect className='Navbar' expand="lg"  variant="dark">
+            <Container >
                 {/* <img className='foto' src="../IMG/" width={35} alt="" /> */}
 
-                <Navbar.Brand href="#home"><Link to='/'>Shirtmuseum</Link></Navbar.Brand>
-                <li><Link to={`/product/`}>Productos</Link></li>
-                <li><Link to='/Contact/'>Contacto</Link></li>
+                <Navbar.Brand href="#home"><Link className='letras' to='/'>Shirtmuseum</Link></Navbar.Brand>
+                <li ><Link className='letras' to={`/product/`}>Productos</Link></li>
+                <li ><Link className='letras' to='/Contact/'>Contacto</Link></li>
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 {/* <Navbar.Collapse id="responsive-navbar-nav">

@@ -9,11 +9,12 @@ const Item = ({ item }) => {
 
 
         < div className='prod' id={item.id}>
-            <h2>
-                {item.equipo}
-            </h2>
-            <p>Precio: ${item.precio}</p >
-            <p> Disponibles: {item.stock} unidades</p>
+            <h2 className='letras'> {item.equipo} </h2>
+            <img src={item.imagen} alt="camisetas" width={150}></img>
+            <p className='letras'>Descripción: {item.descripcion}</p >
+            <p className='letras'>Precio: ${item.precio}</p >
+            <p className='letras'> Disponibles: {item.stock} unidades</p>
+            
 
             <Link to={`/Item/${item.id}`}>Ver detalle</Link>
         </div>
